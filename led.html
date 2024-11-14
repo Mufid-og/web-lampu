@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fidLabs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="layouts">
+        <section class="navbar">
+            <h3>fidLabs</h3>
+        </section>
+        <section class="page-title">
+            <h3>LED CONTROL</h3>
+        </section>
+        <section class="leds">
+            <div class="led">
+                <img src="Assets/led-off.png" alt="" id="dapurImg">
+                <p class="led-description">DAPUR</p>
+                <button onclick="setDapurLed()" id="dapurBulp"><strike>MAINTENECE</strike></button>
+            </div>
+            <div class="led">
+                <img src="Assets/led-off.png" alt="" id="kamarImg">
+                <p class="led-description">KAMAR</p>
+                <button onclick="setKamarLed()" id="kamarBulp">ON</button>
+            </div>
+            <div class="led">
+                <img src="Assets/led-off.png" alt="" id="tamuImg">
+                <p class="led-description">RUANG TAMU</p>
+                <button onclick="setTamuLed()" id="tamuBulp">ON</button>
+            </div>
+            <div class="led">
+                <img src="Assets/led-off.png" alt="" id="terasImg">
+                <p class="led-description">TERAS</p>
+                <button onclick="setTerasLed()" id="terasBulp">ON</button>
+            </div>
+        </section>
+        <section class="bottombar">
+            <ul>
+                <li>
+                    <a href="/"><i class="fa-solid fa-home"></i></a>
+                </li>
+                <li>
+                    <a href="led.html"><i class="fa-solid fa-lightbulb"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-fan"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-user"></i></a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
